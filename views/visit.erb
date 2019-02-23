@@ -68,4 +68,10 @@
 <script type="text/javascript">
   
   $('select[name="colorpicker"]').simplecolorpicker();
+
+  $('select[name="colorpicker"]').simplecolorpicker({
+  picker: true
+}).on('change', function() {
+  $(document.body).css('background-color', $('select[name="colorpicker"]').val());
+});
 </script>
