@@ -30,7 +30,7 @@ post '/visit' do
 	@professional = params[:professional]
 
 	@title = 'Спасибо!'
-	@message = "#{@user_name} мы будем вас ждать  #{@date_time} "
+	@message = "#{@user_name} мы будем вас ждать!  #{@date_time} "
 
 	f = File.open './public/users.txt', 'a'
 	f.write "User: #{@user_name}, Phone: #{@user_phone}, Date and time: #{@date_time}, Professional: #{@professional}\n"
